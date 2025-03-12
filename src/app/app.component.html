@@ -1,0 +1,17 @@
+<div class="container">
+ 
+  <app-search (zipcode)="onsomeaction($event)" ></app-search>
+  
+  <div class="upperdata">
+    
+    <app-mainarea></app-mainarea>
+  </div>
+
+  <div class="lowerdata">
+    <app-tempvariables  [thisType]="'Max temperature'" [thisIcon]="'Hot'" [thisValue]="'20 degrees'"></app-tempvariables>
+    <app-tempvariables  [thisType]="'Min temperature'" [thisIcon]="'cold'" [thisValue]="'1degrees'"></app-tempvariables>
+    
+  </div>
+</div>
+
+<router-outlet></router-outlet>

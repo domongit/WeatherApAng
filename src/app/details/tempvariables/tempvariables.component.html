@@ -1,0 +1,10 @@
+ 
+    <div class="d-flex flex-row">
+      <div class="p-2"> {{thisType}}</div>
+      <div class="p-2">  
+        <i class="fa-solid fa-temperature-low" *ngIf ="thisIcon=='cold'"  ></i>
+        <i class="fa-solid fa-temperature-high" *ngIf ="thisIcon=='hot'"  ></i>
+        {{thisValue}}
+       </div>
+    </div>
+   
