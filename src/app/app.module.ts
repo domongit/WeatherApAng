@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { TempvariablesComponent } from './details/tempvariables/tempvariables.component';
 import {MainareaComponent } from './mainarea/mainarea.component';
 import { SearchComponent } from './search/search.component'
- import {HttpClientModule } from '@angular/common/http'
+import {HttpClientModule } from '@angular/common/http'
+import { CommonModule } from '@angular/common';  
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { SearchComponent } from './search/search.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,HttpClientModule
+    FormsModule,HttpClientModule,CommonModule
   ],
    
   bootstrap: [AppComponent]

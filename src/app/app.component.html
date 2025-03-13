@@ -4,12 +4,12 @@
   
   <div class="upperdata">
     
-    <app-mainarea></app-mainarea>
+    <app-mainarea [skies]="weatherObj.skies ||''"   [locationName]="weatherObj.name ||''"  [feelsLike]="weatherObj.feels_like ||''"  ></app-mainarea>
   </div>
 
   <div class="lowerdata">
-    <app-tempvariables  [thisType]="'Max temperature'" [thisIcon]="'Hot'" [thisValue]="'20 degrees'"></app-tempvariables>
-    <app-tempvariables  [thisType]="'Min temperature'" [thisIcon]="'cold'" [thisValue]="'1degrees'"></app-tempvariables>
+    <app-tempvariables  [thisType]="'Max temperature'" [thisIcon]="'hot'" [thisValue]="weatherObj.temp_max|| ''"></app-tempvariables>
+    <app-tempvariables  [thisType]="'Min temperature'" [thisIcon]="'cold'" [thisValue]="weatherObj.temp_min||''"></app-tempvariables>
     
   </div>
 </div>

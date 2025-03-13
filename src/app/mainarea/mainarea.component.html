@@ -1,8 +1,15 @@
 <div>
-    <img src="../assets/cold.png " alt="cold" *ngif="14 > 15">
-    <img src="../assets//sunny.png" alt="hot" >
+    <img src="../../assets/cloudy.png" alt="cloud" *ngIf="skies?.toLowerCase() === 'clouds'">
+    <img src="../assets//sunny.png" alt="hot" *ngIf="skies?.toLowerCase() === 'clear'">
     <div class="weather-data">
-        <div class="location"> washingdont</div>
-        <div class="temp"> {{20}} deg</div>
+        <div class="location"> 
+           <h1>{{locationName}} </h1> 
+        
+        </div>
+        <div class="temp"> {{feelsLike}} deg  
+            <br/>{{skies}}
+           </div>
     </div>
 </div>
+
+ 
